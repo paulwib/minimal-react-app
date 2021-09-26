@@ -30,7 +30,7 @@ module.exports = {
       patterns: [{
         from: path.resolve(__dirname, 'assets', '**', '*'),
         to: path.resolve(__dirname, 'dist'),
-        transformPath(targetPath, absolutePath) {
+        transformPath(targetPath) {
           return targetPath.replace(/^assets\//, '');
         }
       }]
