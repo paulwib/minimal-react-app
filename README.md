@@ -28,7 +28,7 @@ In dev mode you don't need to run the `yarn build` step.
 
 # In the Box
 
-* React 16
+* React 17
 * Babel 7 config
 * Webpack 5 config
 * Tested with Node 12.x and 14.x, may work with other versions.
