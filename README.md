@@ -18,7 +18,7 @@ For dev mode with hot reloading use:
 $ yarn dev-start
 ```
 
-Then go to http://localhost:8081.
+Then go to http://localhost:8080.
 
 In dev mode you don't need to run the `yarn build` step.
 
