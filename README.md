@@ -4,15 +4,19 @@ This is intended as the most minimal way to get started with React. It aims to b
 
 ## Get started
 
+Running a production version:
+
 ```
 $ yarn
-$ yarn build
+$ yarn build --mode=production
 $ yarn start
 ```
 
 Then go to http://localhost:5000.
 
-For dev mode with hot reloading use:
+---
+
+Running in dev mode with hot reloading use:
 
 ```
 $ yarn dev-start
