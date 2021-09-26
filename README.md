@@ -30,7 +30,7 @@ In dev mode you don't need to run the `yarn build` step.
 
 * React 16
 * Babel 7 config
-* Webpack 4 config
-* Tested with Node 12.x, may work with other versions.
+* Webpack 5 config
+* Tested with Node 12.x and 14.x, may work with other versions.
 
 [create-react-app]:https://github.com/facebook/create-react-app
