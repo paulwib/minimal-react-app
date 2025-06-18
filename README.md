@@ -29,6 +29,6 @@ Then go to http://localhost:8080.
 * React 17
 * Babel 7 config
 * Webpack 5 config
-* Tested with Node 12.x and 14.x, may work with other versions.
+* Tested with Node 22.x, may work with other versions.
 
 [create-react-app]:https://github.com/facebook/create-react-app
