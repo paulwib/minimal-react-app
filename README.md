@@ -1,6 +1,6 @@
 # Minimal React App
 
-This is intended as the most minimal way to get started with React. It aims to be much lighter weight than [create-react-app][] and is focused on basic config and compilation, for example it has no opinions about linting, testing, deployment or monitoring.
+This is intended as the most minimal way to get started with React using Typescript. It aims to be much lighter weight than [create-react-app][] and is focused on basic config and compilation, for example it has no opinions about linting, testing, deployment or monitoring.
 
 ## Get started
 
@@ -27,7 +27,7 @@ Then go to http://localhost:8080.
 # In the Box
 
 * React 17
-* Babel 7 config
+* Typescript (with ts-loader)
 * Webpack 5 config
 * Tested with Node 22.x, may work with other versions.
 

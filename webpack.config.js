@@ -4,7 +4,15 @@ const CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   entry: {
-    main: path.resolve(__dirname, 'src', 'index.js'),
+    main: path.resolve(__dirname, 'src', 'index.tsx'),
+  },
+  resolve: {
+    // Add `.ts` and `.tsx` as a resolvable extension.
+    extensions: [".ts", ".tsx", ".js"],
+    // Add support for TypeScripts fully qualified ESM imports.
+    extensionAlias: {
+     ".js": [".js", ".ts", ".tsx"]
+    }
   },
   devtool: 'cheap-module-source-map',
   output: {
@@ -14,9 +22,9 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.jsx?$/,
+        test: /\.(ts|tsx)?$/,
         use: {
-          loader: 'babel-loader',
+          loader: 'ts-loader',
         }
       }
     ]
