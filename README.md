@@ -7,9 +7,9 @@ This is intended as the most minimal way to get started with React. It aims to b
 Running a production version:
 
 ```
-$ yarn
-$ yarn build --mode=production
-$ yarn start
+$ npm install
+$ npm run build
+$ npm start
 ```
 
 Then go to http://localhost:5000.
@@ -19,12 +19,10 @@ Then go to http://localhost:5000.
 Running in dev mode with hot reloading use:
 
 ```
-$ yarn dev-start
+$ npm run dev-start
 ```
 
 Then go to http://localhost:8080.
-
-In dev mode you don't need to run the `yarn build` step.
 
 # In the Box
 
