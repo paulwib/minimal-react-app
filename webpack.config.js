@@ -36,11 +36,12 @@ module.exports = {
     }),
     new CopyPlugin({
       patterns: [{
-        from: path.resolve(__dirname, 'assets', '**', '*'),
-        to: path.resolve(__dirname, 'dist'),
-        transformPath(targetPath) {
-          return targetPath.replace(/^assets\//, '');
-        }
+        context: path.resolve(__dirname, 'assets'),
+        from: '**/*',
+        to({ context, absoluteFilename }) {
+          const relativePath = path.relative(context, absoluteFilename);
+          return relativePath.replace(/^assets\//, '');
+        },
       }]
     }),
   ]
