@@ -4,6 +4,8 @@ This is intended as a minimal way to get started with React using Typescript. It
 
 This branch uses `vite`, which has signiificantly less dependencies than `webpack` or `rspack` - it has about 112, versus ~400 for `webpack`/`rspack`.
 
+Vite does not _require_ a `tsconfig.json` - without it will use typescript's defaults. One is explicitly added here, but probably only the `strict: true` option is different from the defaults (`jsx` is not a default tsconfig option, but vite appears to work fine without it).
+
 ## Get started
 
 Running a production version:
