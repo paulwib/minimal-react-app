@@ -43,5 +43,14 @@ module.exports = {
         },
       }]
     }),
-  ]
+  ],
+  // In rspack we have to explicitly tell the dev server about other public files
+  // _unless we rename the directory to public__, then they would be served by
+  // default (which is probably a better option to be fair)
+  devServer: {
+    static: {
+      directory: path.join(__dirname, 'assets'),
+      publicPath: '/',
+    },
+  },
 };
