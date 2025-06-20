@@ -6,10 +6,7 @@
     "jsx": "react-jsx",
     "moduleResolution": "node",
     "esModuleInterop": true,
-    "skipLibCheck": true,
-    "sourceMap": true,
-    // This allows using commonjs `exports = foo` to be treated like a default ESM export.
-    "allowSyntheticDefaultImports": true
+    "skipLibCheck": true
   },
   "include": ["./src/"]
 }
