@@ -4,17 +4,15 @@
   "main": "src/index.js",
   "scripts": {
     "build": "vite build",
-    "dev": "vite dev",
-    "preview": "vite preview",
-    "start": "serve dist",
+    "dev": "vite dev --port 5001",
+    "preview": "vite preview --port 5000",
     "clean": "rm -Rf dist"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "react": "^19.1.0",
-    "react-dom": "^19.1.0",
-    "serve": "^14.2.4"
+    "react-dom": "^19.1.0"
   },
   "devDependencies": {
     "@types/react": "^19.1.8",
