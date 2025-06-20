@@ -1,6 +1,5 @@
 const path = require('path');
-const HtmlPlugin = require('html-webpack-plugin');
-const CopyPlugin = require('copy-webpack-plugin');
+const { rspack } = require('@rspack/core');
 
 module.exports = {
   entry: {
@@ -30,11 +29,11 @@ module.exports = {
     ]
   },
   plugins: [
-    new HtmlPlugin({
+    new rspack.HtmlRspackPlugin({
       title: 'Minimal React App',
       template: path.resolve(__dirname, 'src', 'templates', 'index.html'),
     }),
-    new CopyPlugin({
+    new rspack.CopyRspackPlugin({
       patterns: [{
         context: path.resolve(__dirname, 'assets'),
         from: '**/*',
