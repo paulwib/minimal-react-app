@@ -26,7 +26,7 @@ Then go to http://localhost:8080.
 
 # In the Box
 
-* React 17
+* React 19
 * Typescript (with ts-loader)
 * Webpack 5 config
 * Tested with Node 22.x, may work with other versions.
