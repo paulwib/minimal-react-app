@@ -1,6 +1,8 @@
 # Minimal React App
 
-This is intended as the most minimal way to get started with React using Typescript. It aims to be much lighter weight than [create-react-app][] and is focused on basic config and compilation, for example it has no opinions about linting, testing, deployment or monitoring.
+This is intended as a minimal way to get started with React using Typescript. It aims to be much lighter weight than [create-react-app][] and is focused on basic config and compilation, for example it has no opinions about linting, testing, deployment or monitoring.
+
+This version uses `rspack`, a `webpack` compatible alternative written in Rust. It aims to have better performance, but in this minimal project there is no measurable differnce.
 
 ## Get started
 
@@ -28,7 +30,7 @@ Then go to http://localhost:8080.
 
 * React 19
 * Typescript (with ts-loader)
-* Webpack 5 config
+* Rspack
 * Tested with Node 22.x, may work with other versions.
 
 [create-react-app]:https://github.com/facebook/create-react-app
